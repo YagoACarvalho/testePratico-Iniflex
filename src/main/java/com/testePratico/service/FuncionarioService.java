@@ -142,6 +142,7 @@ public class FuncionarioService {
 
     }
 
+    // Exclui o funcionário João da lista
     public void excluirJoao() {
         funcionarios.removeIf(f -> f.getNome().equals("João"));
         System.out.println("------------------------------------------------");
@@ -150,6 +151,7 @@ public class FuncionarioService {
         impimirTabela();
     }
 
+    // Aplica o aumento de 10% do salário atual do funcionário
     public void darAumento() {
         System.out.println("------------------------------------------------");
         System.out.println("Salários atualizados com aumento de 10%");
@@ -162,11 +164,13 @@ public class FuncionarioService {
         impimirTabela();
     }
 
+    // Agrupa os funcionários por função exercída
     private Map<String, List<Funcionario>> agruparPorFuncao() {
         return funcionarios.stream()
                 .collect(Collectors.groupingBy(Funcionario::getFuncao));
     }
 
+    //Imprime os funcionários agrupados por função
     public void imprimirAgrupadosPorFuncao() {
         System.out.println("------------------------------------------------");
         System.out.println("Funcionários agrupados por função");
@@ -189,6 +193,7 @@ public class FuncionarioService {
         System.out.println();
     }
 
+    // Busca aniversáriantes dos meses de outrubro(10) e dezembro(12)
     public void buscarAniversariantesOutDez() {
         System.out.println("------------------------------------------------");
         System.out.println("Aniversariantes Outubro e Dezembro");
@@ -210,6 +215,7 @@ public class FuncionarioService {
         System.out.println();
     }
 
+    // Busca o funcionário com mais idade da lista
     public void buscarFuncMaisVelho() {
         System.out.println("------------------------------------------------");
         System.out.println("Funcionário com mais idade");
@@ -229,6 +235,7 @@ public class FuncionarioService {
         System.out.println();
     }
 
+    //Ordena a lista de funcionários por ordem alfabética
     public void ordemAlfabetica() {
 
         System.out.println("------------------------------------------------");
@@ -249,6 +256,7 @@ public class FuncionarioService {
 
 
 
+    // Aplica a soma total dos salários de todos os funcionários
     public void totalSalarios() {
         System.out.println("------------------------------------------------");
         System.out.println("Soma total dos salários dos funcionários");
@@ -266,7 +274,7 @@ public class FuncionarioService {
     }
 
 
-
+    // Retorna a quantidade de salários mínimos que cada funcionário ganha
     public void salarioMinimo() {
         System.out.println("------------------------------------------------");
         System.out.println("Quantidade de salários mínimos que cada funcionário ganha");
