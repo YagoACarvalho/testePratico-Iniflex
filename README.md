@@ -19,7 +19,7 @@ O teste se baseava em desenvolver um projeto em java com os seguintes requisitos
 3.11 – Imprimir o total dos salários dos funcionários.
 3.12 – Imprimir quantos salários mínimos ganha cada funcionário, considerando que o salário mínimo é R$1212.00.
 
-Finalizando esse teste com muito exercício de fixação de lopes com for e forEach, além do método Stream() para fluxos e leitura de dados.
+Finalizando esse teste com muito exercício de fixação de loops com for e forEach, além do método Stream() para fluxos e leitura de dados.
 Para entregar os requisitos de formatação usei alguns métodos já existentes nas classes de tipos usadas como o DataTimeFormatter para definir o formato de datas e o DecimalFormatSymbols
 e o DecimalFormat para definir o formato de reprsentação do atributo salário.
 
